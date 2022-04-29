@@ -82,9 +82,21 @@ const [theme, setTheme] = useState('blue')
 
 function decrementCount() {
   setCount(prevCount => prevCount -1)
+  if (count%2 === 1) {
+    setTheme('blue')    
+  }
+  else {
+    setTheme('red') 
+  }
 }
 function incrementCount() {
   setCount(prevCount => prevCount +1)
+  if (count%2 === 1) {
+    setTheme('blue')    
+  }
+  else {
+    setTheme('red') 
+  }
 }
 //#endregion
 
